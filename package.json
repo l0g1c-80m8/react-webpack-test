@@ -16,7 +16,8 @@
     "css-loader": "~0.18.0",
     "node-sass": "~3.3.3",
     "sass-loader": "~3.0.0",
-    "bootstrap-sass-loader": "~1.0.9"
+    "bootstrap-sass-loader": "~1.0.9",
+    "react-bootstrap": "~0.27.2"
   },
   "devDependencies": {
     "babel-core": "~5.8.25",
