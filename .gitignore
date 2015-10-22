@@ -1,2 +1,8 @@
 node_modules/
 build/bundle.js*
+build/*.woff2
+build/*.svg
+build/*.ttf
+build/*.eot
+build/*.woff
+

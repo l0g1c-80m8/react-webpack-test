@@ -1,8 +1,8 @@
 var path = require('path');
 var config = {
   entry: [
-     path.resolve(__dirname, 'app/panel/main.js'),
-    'bootstrap-sass!./app/common/bootstrap-sass.config.js'
+     path.resolve(__dirname, 'app/main.js'),
+    'bootstrap-sass!./app/bootstrap-sass.config.js'
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
