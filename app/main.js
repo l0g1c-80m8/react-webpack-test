@@ -10,17 +10,14 @@ import PageOne from './components/pages/pageone.jsx'
 import PageTwo from './components/pages/pagetwo.jsx'
 
 import './scss/main.scss';
-
 const initialState = {
-  reducer1: {
+  myreducer: {
     test: null
-  },
-  router: null
-}
-
+  }
+};
 const store = makeStore(initialState);
 
-console.log(store.getState());
+
 class Root extends React.Component {
 
   render () {
@@ -28,9 +25,9 @@ class Root extends React.Component {
         <div>
             <ReduxRouter>
               <Route component={Application}>
-                <Route path="/" component={Home} />
-                <Route path="page1" component={PageOne}/>
-                <Route path="page2" component={PageTwo}/>
+                <Route path="/" component={Home}/>
+                <Route path="/page1" component={PageOne}/>
+                <Route path="/page2" component={PageTwo}/>
               </Route>
             </ReduxRouter>
        </div>

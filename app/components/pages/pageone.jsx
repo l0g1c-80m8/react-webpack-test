@@ -7,7 +7,7 @@ export default class PageOne extends React.Component {
   }
 
   render () {
-    return <div className="row">
+    return <div className="col-xs-12">
       pageone
     </div>
 

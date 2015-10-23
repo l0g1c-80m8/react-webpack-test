@@ -1,14 +1,13 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux'
 import { reduxReactRouter, routerStateReducer } from 'redux-router'
-import createHistory from 'history/lib/createBrowserHistory'
+import createHistory from 'history/lib/createHashHistory'
 import thunk from 'redux-thunk'
-import { reducer1 } from '../reducers/reducer1.js'
+import { myreducer } from '../reducers/myreducer.js'
 
 const reducer = combineReducers({
   router: routerStateReducer,
-  reducer1: reducer1
+  myreducer: myreducer
 });
-
 
 export default function makeStore (initialState) {
 
