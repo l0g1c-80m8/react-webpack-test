@@ -1,10 +1,8 @@
-/* global __DEVTOOLS__ */
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux'
 import { reduxReactRouter, routerStateReducer } from 'redux-router'
-import createHistory from 'history/lib/createHistory'
+import createHistory from 'history/lib/createBrowserHistory'
 import thunk from 'redux-thunk'
 import { reducer1 } from '../reducers/reducer1.js'
-import Routes from '../routes.jsx'
 
 const reducer = combineReducers({
   router: routerStateReducer,
@@ -12,43 +10,13 @@ const reducer = combineReducers({
 });
 
 
-export default function configureStore (initialState) {
+export default function makeStore (initialState) {
 
   const store = compose(
     applyMiddleware(thunk),
-    reduxReactRouter({
-      Routes,
-      createHistory
-    })/*,
-    devTools()*/
-  )(createStore)(reducer);
-
+    reduxReactRouter({createHistory})
+  )(createStore)(reducer, initialState);
   return store;
 
 }
 
-
-/*
-
-
-const storeEnhancers = [ reduxReactRouter({ createHashHistory })]
-let combinedCreateStore = compose(...storeEnhancers)(createStore)
-const finalCreateStore = applyMiddleware(thunk)(combinedCreateStore)
-const combinedReducer = combineReducers(Object.assign({
-  router: routerStateReducer
-}, reducers))
-
-export default function configureStore (initialState) {
-
-  const store = finalCreateStore(combinedReducer, initialState)
-
-  if (module.hot)
-    // Enable Webpack hot module replacement for reducers
-    module.hot.accept('../reducers', () => {
-      const nextRootReducer = require('../reducers/index')
-      store.replaceReducer(nextRootReducer)
-    })
-
-  return store
-}
-*/

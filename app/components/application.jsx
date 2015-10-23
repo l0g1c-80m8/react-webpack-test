@@ -10,7 +10,7 @@ export default class Application extends React.Component {
 
   render () {
 
-
+    console.log('render from Application');
     return (
       <div id="layout">
         <Header/>
