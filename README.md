@@ -10,3 +10,5 @@ Reactjs stack test
  * sass loader - sass boostrap loader
  * webpack-dev-server
 
+HACK https://github.com/npm/npm/issues/9642
+npm i -S history
