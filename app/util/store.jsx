@@ -2,11 +2,11 @@ import { createStore, combineReducers, compose, applyMiddleware } from 'redux'
 import { reduxReactRouter, routerStateReducer } from 'redux-router'
 import createHistory from 'history/lib/createHashHistory'
 import thunk from 'redux-thunk'
-import { myreducer } from '../reducers/myreducer.js'
+import { github } from '../reducers/github.js'
 
 const reducer = combineReducers({
   router: routerStateReducer,
-  myreducer: myreducer
+  github: github
 });
 
 export default function makeStore (initialState) {

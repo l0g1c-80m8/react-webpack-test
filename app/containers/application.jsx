@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
-import Header from './header.jsx'
-import Footer from './footer.jsx'
+import Header from '../components/header.jsx'
+import Footer from '../components/footer.jsx'
 
 export default class Application extends React.Component {
 
@@ -10,7 +10,6 @@ export default class Application extends React.Component {
 
   render () {
 
-    console.log('render from Application');
     return (
       <div id="layout">
         <Header/>

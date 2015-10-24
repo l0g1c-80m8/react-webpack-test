@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-
 export default class Home extends React.Component {
 
   constructor (props) {
@@ -7,8 +6,8 @@ export default class Home extends React.Component {
   }
 
   render () {
-    return <div className="col-xs-12">
-      home
+    return <div className="row">
+        home
     </div>
 
   }

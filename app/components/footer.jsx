@@ -7,8 +7,10 @@ export default class Footer extends React.Component {
   }
 
   render () {
-    return <div className="col-xs-12">
-      footer
+    return <div className="row" id="footer">
+        <div className="container-fluid">
+        <p>Footer de app.</p>
+        </div>
     </div>
 
   }
