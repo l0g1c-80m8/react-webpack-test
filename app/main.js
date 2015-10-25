@@ -14,7 +14,7 @@ import './scss/main.scss';
 const initialState = {
 };
 const store = makeStore(initialState);
-
+console.log('main.js');
 class Root extends React.Component {
 
   render () {
