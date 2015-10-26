@@ -4,6 +4,7 @@ Repository with minimal ReactJS stack test
 * reactjs 0.14
 * redux
 * react-router & redux-router
+* redux-devtools
 * react transform for hot-reloading and errors
 * es6 components
 * sass scss
