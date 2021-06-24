@@ -1,3 +1,5 @@
+Forked from: https://github.com/trilopin/react-webpack-test
+
 # react-webpack-test
 
 Repository with minimal ReactJS stack test
